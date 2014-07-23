@@ -1,0 +1,38 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1404788521435
+Build-Jdk: 1.6.0_65
+Built-By: cam
+Bundle-Description: A service discovery recipe.
+Bundle-DocURL: http://www.apache.org/
+Bundle-License: file:///Users/cam/Documents/workspace/curator/target/che
+ ckout/curator-x-discovery/LICENSE
+Bundle-ManifestVersion: 2
+Bundle-Name: Curator Service Discovery
+Bundle-SymbolicName: curator-x-discovery
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.6.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.curator.x.discovery;uses:="com.google.common.
+ base,org.apache.curator.x.discovery.details,org.apache.curator.framewor
+ k.listen,org.apache.curator.framework,com.google.common.collect,org.cod
+ ehaus.jackson.annotate,org.slf4j";version="2.6.0",org.apache.curator.x.
+ discovery.strategies;uses:="org.apache.curator.x.discovery,org.apache.c
+ urator.x.discovery.details";version="2.6.0",org.apache.curator.x.discov
+ ery.details;uses:="org.apache.curator.x.discovery,com.google.common.col
+ lect,com.google.common.base,org.codehaus.jackson.map,org.codehaus.jacks
+ on.map.type,org.codehaus.jackson.type,org.apache.curator.framework,org.
+ apache.curator.framework.listen,org.apache.curator.framework.recipes.ca
+ che,org.apache.curator.utils,org.apache.zookeeper.data,org.apache.curat
+ or.framework.state,org.slf4j,org.apache.zookeeper,org.apache.curator.fr
+ amework.api,org.apache.curator.x.discovery.strategies";version="2.6.0"
+Import-Package: com.google.common.base;version="[16.0,17)",com.google.co
+ mmon.collect;version="[16.0,17)",org.apache.curator.framework;version="
+ [2.6,3)",org.apache.curator.framework.api;version="[2.6,3)",org.apache.
+ curator.framework.listen;version="[2.6,3)",org.apache.curator.framework
+ .recipes.cache;version="[2.6,3)",org.apache.curator.framework.state;ver
+ sion="[2.6,3)",org.apache.curator.utils;version="[2.6,3)",org.apache.zo
+ okeeper;version="[3.4,4)",org.apache.zookeeper.data;version="[3.4,4)",o
+ rg.codehaus.jackson.annotate;version="[1.9,2)",org.codehaus.jackson.map
+ ;version="[1.9,2)",org.codehaus.jackson.map.type;version="[1.9,2)",org.
+ codehaus.jackson.type;version="[1.9,2)",org.slf4j;version="[1.7,2)"
+Tool: Bnd-1.50.0

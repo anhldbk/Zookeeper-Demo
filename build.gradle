@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'org.apache.curator:curator-recipes:2.6.0'
+    compile 'org.apache.curator:curator-framework:2.6.0'
+    compile 'org.apache.curator:curator-client:2.6.0'
+    compile 'org.apache.curator:curator-x-discovery:2.6.0'
+}
+
+jar {
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    //manifest { attributes 'Main-Class': 'Demo1' }
+}
